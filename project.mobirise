@@ -1,0 +1,150 @@
+{
+  "settings": {
+    "name": "swft pro",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#9fe870",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.4,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "additionalSetColors": []
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.13",
+    "siteFonts": [],
+    "favicon": "@PROJECT_PATH@/assets/images/swft.png",
+    "sitemapSwitcher": true,
+    "siteUrl": "https://swft-pro.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nSitemap: https://swft-pro.github.io/sitemap.xml",
+    "mbrsiteDomain": "lxivhj3jok",
+    "imageResize": false,
+    "usedWebp": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.9.13"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "SWFT Swap | SWFT Pro™ | Home",
+        "meta_descr": "The SWIFT PRO is equipped with an automatic voltage adjustment feature, which detects and configures itself to match the voltage requirements of the device being charged.",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image03\" group=\"Image & Video\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <img src=\"@PROJECT_PATH@/assets/images/screencapture-swft-pro-2024-10-10-16-22.png\" alt=\"swft pro\">\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 pb-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_anchor": "image04-0",
+          "_isUserblock": true,
+          "_cid": "uqMX0S4QcZ",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2.25rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "4rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#edefeb",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#edefeb"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"12\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#000000\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#000000\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><b>Exploring SWFT Pro: Revolutionizing Cross-Chain Transactions</b></h3>\n          <div class=\"row card-box align-left\">\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Introduction</b>\n                </h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">In the rapidly evolving world of blockchain and cryptocurrencies, the ability to seamlessly transact across different platforms is crucial for fostering adoption and enhancing user experience. <a href=\"https://swft-pro.github.io/\" class=\"text-primary\"><b>SWFT Pro</b></a> has emerged as a game-changer in this space, providing a decentralized platform for cross-chain transactions, allowing users to swap cryptocurrencies effortlessly. This blog will delve into what <a href=\"https://www.swft.pro/\" class=\"text-primary\"><b>SWFT Pro</b></a> is, how it works, its unique features, and its potential impact on the cryptocurrency ecosystem.<br><br></p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>What is SWFT Pro?</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">SWFT Pro is a decentralized cross-chain trading platform designed to facilitate the seamless exchange of cryptocurrencies across different blockchain networks. Launched in 2018, SWFT Pro aims to eliminate the barriers to cross-chain trading that have historically hindered user experience. By enabling users to swap assets quickly and with minimal fees, SWFT Pro is positioned to become an essential tool for cryptocurrency traders and investors.<br><br><b>Key Objectives of SWFT Pro</b><br><b>Cross-Chain Compatibility:</b> SWFT Pro aims to support a wide range of cryptocurrencies and blockchain networks, allowing users to transact across different ecosystems effortlessly.<br><b>Decentralization:</b> By leveraging a decentralized model, SWFT Pro enhances security and reduces reliance on centralized exchanges, minimizing the risk of hacks and fraud.<br><b>User-Friendly Interface:</b> SWFT Pro focuses on providing an intuitive and easy-to-navigate platform, making it accessible for both novice and experienced traders.<br><b>Low Fees: </b>The platform aims to offer competitive trading fees, making it an attractive option for users looking to maximize their returns.</p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>How SWFT Pro Works</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. Cross-Chain Technology</b><br>At the core of SWFT Pro's functionality is its innovative cross-chain technology. This technology allows users to swap cryptocurrencies from different blockchain networks without the need for a centralized intermediary. By employing a combination of smart contracts and atomic swaps, SWFT Pro ensures that transactions are secure, efficient, and trustless.<br><br><b>2. Decentralized Exchange (DEX)</b><br>SWFT Pro operates as a decentralized exchange (DEX), meaning that users retain control of their private keys and funds throughout the trading process. This decentralization enhances security and reduces the risks associated with centralized exchanges, such as hacks and theft.<br><br><b>3. Liquidity Pools</b><br>To facilitate smooth trading experiences, SWFT Pro utilizes liquidity pools. These pools are collections of tokens locked in smart contracts that provide liquidity for trades. By incentivizing users to contribute to these pools, SWFT Pro ensures that there is always sufficient liquidity for users to execute trades swiftly.<br><br><b>4. User Interface and Experience</b><br>SWFT Pro boasts a sleek and user-friendly interface that simplifies the trading process. Users can easily navigate the platform, select their desired trading pairs, and execute swaps within a few clicks. The platform also provides real-time data and analytics, empowering users to make informed trading decisions.</p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Key Features of SWFT Pro</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. Multi-Chain Support</b><br>One of the standout features of SWFT Pro is its commitment to supporting multiple blockchain networks. This multi-chain support allows users to trade a diverse range of cryptocurrencies, enhancing the overall trading experience. SWFT Pro currently supports popular blockchains such as Ethereum, Bitcoin, and Binance Smart Chain, with plans to expand to additional networks in the future.<br><br><b>2. Instant Swaps</b><br>SWFT Pro enables users to execute instant swaps between different cryptocurrencies. This feature is particularly beneficial for traders looking to capitalize on market fluctuations quickly. By minimizing the time it takes to complete transactions, SWFT Pro enhances user satisfaction and encourages active trading.<br><br><b>3. Low Transaction Fees</b><br>Transaction fees can significantly impact a trader's profitability, and SWFT Pro addresses this concern by offering competitive fees. By streamlining its operational processes and leveraging decentralized technology, SWFT Pro can provide users with low-cost trading options.<br><br><b>4. Security and Privacy</b><br>Security is a top priority for SWFT Pro. The platform employs advanced security measures, including encryption and smart contracts, to protect user funds and data. Additionally, by operating as a decentralized exchange, SWFT Pro eliminates the need for users to deposit their funds on the platform, reducing the risk of hacks.<br><br><b>5. Cross-Platform Compatibility</b><br>SWFT Pro is designed to be accessible across various devices, including desktops, tablets, and smartphones. This cross-platform compatibility allows users to trade on-the-go, providing flexibility and convenience.<br><br><b>6. Community Engagement</b><br>SWFT Pro fosters a sense of community among its users by actively engaging with them through social media, forums, and events. This community-driven approach allows users to provide feedback, suggest improvements, and stay informed about the latest developments on the platform.<br><br></p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>The Importance of SWFT Pro in the Cryptocurrency Ecosystem</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. Enhancing Liquidity</b><br>SWFT Pro plays a crucial role in enhancing liquidity across the cryptocurrency market. By enabling seamless cross-chain transactions, the platform allows users to access a broader range of assets, ultimately leading to increased trading volumes and improved market efficiency.<br><br><b>2. Promoting Decentralization</b><br>As the cryptocurrency space matures, the need for decentralized solutions becomes increasingly important. SWFT Pro's commitment to decentralization empowers users to retain control over their funds and transactions, aligning with the core principles of blockchain technology.<br><br><b>3. Driving Adoption</b><br>By simplifying the trading process and reducing costs, SWFT Pro is poised to drive greater adoption of cryptocurrencies. The platform's user-friendly interface and instant swap capabilities make it accessible to a wider audience, including those new to the cryptocurrency space.<br><br><b>4. Supporting Innovation</b><br>SWFT Pro's innovative cross-chain technology encourages other projects and platforms to explore new possibilities in the cryptocurrency space. As more platforms adopt similar decentralized models, the overall ecosystem will benefit from increased competition and innovation.<br><br><b>5. Bridging the Gap Between Blockchains</b><br>SWFT Pro serves as a bridge between different blockchain networks, facilitating interoperability and collaboration. By enabling users to transact across various ecosystems, the platform enhances the overall functionality and utility of cryptocurrencies.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Use Cases of SWFT Pro</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. Arbitrage Trading</b><br>Arbitrage trading involves taking advantage of price discrepancies between different exchanges. SWFT Pro's instant swap feature allows traders to quickly execute trades across multiple blockchains, enabling them to capitalize on arbitrage opportunities.<br><br><b>2. Portfolio Diversification</b><br>Investors looking to diversify their cryptocurrency portfolios can benefit from SWFT Pro's multi-chain support. By easily swapping between different assets, users can adjust their portfolios in response to market conditions and personal investment strategies.<br><br><b>3. Accessing New Tokens</b><br>SWFT Pro provides users with a platform to access new and emerging tokens that may not be available on traditional exchanges. This access can be particularly valuable for investors looking to explore innovative projects in the cryptocurrency space.<br><br><b>4. Decentralized Finance (DeFi) Participation</b><br>As the DeFi ecosystem continues to grow, SWFT Pro enables users to participate in various DeFi projects by facilitating the exchange of assets across different platforms. This functionality enhances users' ability to engage with DeFi protocols and maximize their returns.<br><br><b>5. Simplifying Transactions for Merchants</b><br>Merchants looking to accept cryptocurrencies can utilize SWFT Pro to simplify transactions. By providing a seamless way to convert between different assets, SWFT Pro allows merchants to manage their cryptocurrency payments more effectively.<br><br></p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Challenges and Considerations</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. Regulatory Compliance</b><br>As with any cryptocurrency platform, SWFT Pro faces regulatory challenges. Navigating the complex and evolving regulatory landscape is crucial for ensuring the platform's long-term viability and success.<br><br><b>2. Security Risks</b><br>While SWFT Pro prioritizes security, the decentralized nature of blockchain technology does not eliminate all risks. Users must remain vigilant and adopt best practices for securing their funds, such as using hardware wallets and enabling two-factor authentication.<br><br><b>3. Market Volatility</b><br>The cryptocurrency market is known for its volatility, which can impact the trading experience on SWFT Pro. Users should be prepared for price fluctuations and develop risk management strategies to protect their investments.<br><br><b>4. Competition</b><br>The cryptocurrency space is highly competitive, with numerous platforms offering similar services. SWFT Pro must continually innovate and differentiate itself to maintain its position in the market.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>The Future of SWFT Pro</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. Expanding Supported Assets</b><br>SWFT Pro plans to expand its list of supported cryptocurrencies and blockchain networks to enhance user options and trading opportunities. By continually adding new assets, the platform can attract a broader user base.<br><br><b>2. Enhancing User Experience</b><br>Improving the user experience will be a key focus for SWFT Pro. The platform will continue to refine its interface, streamline processes, and incorporate user feedback to create a more intuitive trading environment.<br><br><b>3. Integrating Advanced Features</b><br>SWFT Pro aims to integrate advanced features such as limit orders, stop-loss orders, and customizable trading strategies to enhance the trading experience for users. These features can provide additional tools for traders to optimize their strategies.<br><br><b>4. Strengthening Security Measures</b><br>As the platform grows, SWFT Pro will continue to invest in security measures to protect user funds and data. This includes regular security audits, partnerships with cybersecurity firms, and ongoing education for users about best practices.<br><br><b>5. Building Strategic Partnerships</b><br>SWFT Pro will seek strategic partnerships with other platforms, projects, and businesses to enhance its offerings and expand its reach. Collaborations can drive innovation and create new opportunities for users.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Conclusion</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">SWFT Pro represents a significant advancement in the world of cross-chain transactions, providing users with a decentralized platform that simplifies cryptocurrency trading. By eliminating the barriers to cross-chain trading and offering a user-friendly experience, SWFT Pro has the potential to drive greater adoption of cryptocurrencies and enhance market liquidity.<br><br>As the cryptocurrency ecosystem continues to evolve, SWFT Pro is well-positioned to play a pivotal role in shaping the future of decentralized finance. With its commitment to innovation, security, and user engagement, SWFT Pro invites traders and investors to join its mission of revolutionizing the way we conduct cross-chain transactions.<br><br>In a landscape where interoperability and convenience are essential, SWFT Pro stands out as a powerful tool for navigating the complexities of the cryptocurrency market. Whether you're an experienced trader or just starting your cryptocurrency journey, SWFT Pro offers a seamless and accessible platform to enhance your trading experience. As the platform continues to grow and evolve, it promises to unlock new possibilities for users and contribute to the ongoing transformation of the financial landscape.<br><br></p>\n              </div>\n            </div>\n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_anchor": "article07-1",
+          "_isUserblock": true,
+          "_cid": "uqMX13rp3t",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
